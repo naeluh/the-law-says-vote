@@ -1,0 +1,21 @@
+{
+  "name": "the-law-says-vote",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:aiwinter/the-law-says-vote.git",
+  "author": "naeluh <naeluh@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/fetch": "^6.0.0",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-leaflet": "^2.7.0",
+    "swr": "^0.2.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
