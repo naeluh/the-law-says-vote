@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
 import dynamic from 'next/dynamic';
 
-const MapWithNoSSR = dynamic(() => import('../components/map'), {
-  ssr: false
+const MapWithNoSSR = dynamic(() => import('../components/law'), {
+  ssr: false,
 });
 
 function index() {
   return (
     <div>
-     <MapWithNoSSR />
+      <MapWithNoSSR />
     </div>
-  )
+  );
 }
 
-export default index
+export default index;
