@@ -63,16 +63,13 @@ function Law() {
               maxHeight='300'
               className={styles.leafletpopup}
             >
-              <b>The Law says Vote</b>
-              <br />
-              <br />
+              <b>
+                <h2>The Law says Vote</h2>
+              </b>
               <span>
                 <Location lonlat={position} />
               </span>
               <br />
-              <b>Latitude: {latitude}</b>
-              <br />
-              <b>Longitude: {longitude}</b>
             </Popup>
           </Marker>
         </Map>

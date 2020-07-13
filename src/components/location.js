@@ -45,7 +45,10 @@ function Location({ lonlat }) {
     <div>
       {loaded ? (
         <span>
-          {location} <Vote state={location} />{' '}
+          <b>
+            <p>{location} Voting Rules:</p>
+          </b>{' '}
+          <Vote state={location} />{' '}
         </span>
       ) : (
         `loading... `

@@ -30,8 +30,8 @@ function vote({ state }) {
     return () => {};
   }, []);
   const mystyle = {
-    height: '150px',
-    overflow: 'scroll',
+    maxHeight: '150px',
+    overflowY: 'auto',
   };
   return (
     <div style={mystyle}>
