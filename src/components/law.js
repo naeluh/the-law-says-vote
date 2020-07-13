@@ -3,6 +3,7 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import styles from './law.module.css';
 import Head from 'next/head';
+import Location from './location';
 
 const pointerIcon = new L.Icon({
   iconUrl: '../../assets/pointerIcon.svg',
@@ -57,10 +58,18 @@ function Law() {
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           />
           <Marker position={position} icon={pointerIcon}>
-            <Popup>
+            <Popup
+              maxWidth='auto'
+              maxHeight='300'
+              className={styles.leafletpopup}
+            >
               <b>The Law says Vote</b>
               <br />
-              <h1>Fuck you!</h1>
+              <br />
+              <span>
+                <Location lonlat={position} />
+              </span>
+              <br />
               <b>Latitude: {latitude}</b>
               <br />
               <b>Longitude: {longitude}</b>

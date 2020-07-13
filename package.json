@@ -11,10 +11,13 @@
     "leaflet": "1.6.0",
     "leaflet-geosearch": "^3.0.6",
     "next": "^9.4.5-canary.3",
+    "node-geocoder": "^3.27.0",
+    "opencage-api-client": "^0.7.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.7.0",
-    "swr": "^0.2.3"
+    "swr": "^0.2.3",
+    "xml-js": "^1.6.11"
   },
   "scripts": {
     "dev": "next",
