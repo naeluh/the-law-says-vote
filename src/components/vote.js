@@ -29,8 +29,12 @@ function vote({ state }) {
       });
     return () => {};
   }, []);
+  const mystyle = {
+    height: '150px',
+    overflow: 'scroll',
+  };
   return (
-    <div>
+    <div style={mystyle}>
       {loaded
         ? data.map(d => (
             <div key={d.label._text}>

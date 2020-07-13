@@ -45,11 +45,7 @@ function Location({ lonlat }) {
     <div>
       {loaded ? (
         <span>
-          {location}{' '}
-          <Vote
-            state={location}
-            style={{ height: '300px', overflow: 'scroll' }}
-          />{' '}
+          {location} <Vote state={location} />{' '}
         </span>
       ) : (
         `loading... `
