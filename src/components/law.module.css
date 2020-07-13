@@ -9,4 +9,6 @@
 
 .leafletpopup {
   width: 300px;
+  max-height: 300px;
+  overflow: scroll;
 }
