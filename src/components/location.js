@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Vote from './vote';
+import Vote from './data';
 const opencage = require('opencage-api-client');
 
 function Location({ lonlat }) {
@@ -17,7 +17,9 @@ function Location({ lonlat }) {
             console.log(place.formatted);
             console.log(place.components.road);
             console.log(place.annotations.timezone.name);
-            setLocation(place.components.state);
+            // 1263 Pacific Ave. Kansas City, KS
+            // `${place.components.road} ${place.components.city}, ${place.components.state_code}`
+            setLocation('1263 Pacific Ave. Kansas City KS');
             setLoaded(true);
           }
         } else if (data.status.code == 402) {
@@ -48,7 +50,7 @@ function Location({ lonlat }) {
           <b>
             <p>{location} Voting Rules:</p>
           </b>{' '}
-          <Vote state={location} />{' '}
+          <Vote address={location} />{' '}
         </span>
       ) : (
         `loading... `
