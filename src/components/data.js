@@ -27,7 +27,8 @@ function votingData({ address }) {
   };
   return (
     <div style={mystyle}>
-      {loaded ? data.map(d => ({ d })) : `loading voting rules ... `}
+      Not working !
+      {/* {loaded ? data.map(d => ({ d })) : `loading voting rules ... `} */}
     </div>
   );
 }
